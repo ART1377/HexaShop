@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Mochiy+Pop+One&family=Poppins:wght@300;500;600;700;800&display=swap");
+
+:root {
+  --dark-color: #2a2a2a;
+  --gray-color: #a1a1a1;
+  --light-color: #fff;
+  --transition: all 0.4 ease;
+}
+
+body {
+  /*   font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Mochiy Pop One", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color) !important;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--gray-color) !important;
+}
+
+img {
+  width: 100%;
+}
+
+.custom-btn {
+  font-size: 13px;
+  /padding: 12px 25px;
+  display: inline-block;
+  font-weight: 500;
+}
+.custom-border {
+  border-bottom: 1px dashed #dadada;
+}
+
+/*  ***** start navbar *****  */
+.dropdown-menu {
+  overflow: hidden;
+}
+.dropdown-item:hover {
+  background-color: var(--light-color);
+  color: var(--gray-color);
+}
+
+.d-item:hover .dropdown-menu {
+  display: block !important;
+}
+/*  ***** end navbar *****  */
+
+/*  ***** start home *****  */
+.overlay-on-hover {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all 1s;
+}
+.home-card:hover .overlay-on-hover {
+  opacity: 1 !important;
+}
+.home-card:hover .overlay-1 {
+  display: none !important;
+}
+
+/*  ***** end home *****  */
+
+
+
+
+/*  ***** start men *****  */
+.main-card{
+  position: relative;
+}
+.main-card::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f06e";
+  position: absolute;
+  bottom: 20%;
+  left:25%;
+  z-index: 10;
+  transition: all .4s ease;
+  padding: 1.6rem;
+  background-color: var(--light-color);
+  opacity: 0;
+}
+.main-card::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f005";
+  position: absolute;
+  bottom: 20%;
+  left:55%;
+  z-index: 10;
+  transition: all .8s ease;
+  padding: 1.6rem;
+  background-color: var(--light-color);
+  opacity: 0;
+}
+.main-card:hover::after ,
+.main-card:hover::before{
+  opacity: 1;
+  bottom: 30%;
+}
+
+/*  ***** end men *****  */
+
+
+
+
+/*  ***** start socialMedia *****  */
+.social-item-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all .4s;
+}
+.social-item:hover .social-item-overlay{
+  opacity: 1;
+}
+/*  ***** end socialMedia *****  */
+
+
+
+
+/*  ***** start contact *****  */
+.form-control{
+  height: 46px;
+  border: 1.5px solid var(--dark-color);
+  border-radius: 0;
+}
+.form-control:focus{
+  box-shadow: none;
+  border: 2.5px solid #000;
+}
+.contact-btn:hover{
+  color: #000!important;
+  background-color: var(--light-color);
+}
+.contact-btn:hover .contact-btn-icon{
+  color: #000!important;
+}
+/*  ***** end contact *****  */
+
+
+
+/*  ***** start footer *****  */
+.footer{
+  background-color: var(--dark-color);
+}
+.footer-logo{
+  width: 40%;
+}
+.special-link{
+  color: #cff!important;
+  transition: all .3s ease-in;
+}
+.special-link:hover{
+  color: #CC6666!important;
+}
+/*  ***** end footer *****  */
+
+
+
+
